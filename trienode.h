@@ -1,3 +1,13 @@
+/* 
+   Name: Kenneth Chen
+   UW Net ID: kennec7
+   CSE 374 Homework 5 - trienode
+   5/17/23
+   Copyright [2023] <Kenneth Chen>
+   trienode -> header file that will be used by trie.c and tnine.c
+*/
+
+
 #ifndef TRIENODE_H
 #define TRIENODE_H
 
