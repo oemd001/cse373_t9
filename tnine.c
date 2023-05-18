@@ -1,8 +1,22 @@
+/* 
+   Name: Kenneth Chen
+   UW Net ID: kennec7
+   CSE 374 Homework 5 - tnine
+   5/17/23
+   Copyright [2023] <Kenneth Chen>
+   tnine -> The code reads a dictionary file specified by the user, constructs a trie from the dictionary, 
+   and provides a T9 predictive text session. The T9 predictive text feature allows a user to input a sequence 
+   of numbers representing a word, and the program suggests words that match the input sequence. 
+   If there are multiple matches (T9onyms), the user can request the next match by entering '#'.
+*/
+
 #include "trienode.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
+// run_session interacts with the user to find and print words matching their T9 key sequence inputs.
+// args: *wordTrie (TrieNode)
 void run_session(TrieNode *wordTrie) {
   TrieNode *curr = wordTrie;
   char key[MAX_WORD_SIZE];
@@ -28,6 +42,7 @@ void run_session(TrieNode *wordTrie) {
   }
 }
 
+// main function
 int main(int argc, char **argv) {
   FILE *dictionary = NULL;
   TrieNode *wordTrie = NULL;
