@@ -1,3 +1,10 @@
+# Name: Kenenth Chen
+# UW Net ID: kennec7
+# CSE 374 Homework 5 - Makefile
+# 5/17/23
+# Copyright [2023] <Kenneth Chen>
+# Makefile -> the compilation insturction file that is required to run this file.
+
 CC = gcc
 CFLAGS = -g -Wall
 
